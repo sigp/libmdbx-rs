@@ -28606,7 +28606,7 @@ static LSTATUS mdbx_RegGetValue(HKEY hKey, LPCSTR lpSubKey, LPCSTR lpValue,
 }
 #endif
 
-__cold MDBX_MAYBE_UNUSED static bool
+MDBX_MAYBE_UNUSED __cold static bool
 bootid_parse_uuid(bin128_t *s, const void *p, const size_t n) {
   if (n > 31) {
     unsigned bits = 0;
